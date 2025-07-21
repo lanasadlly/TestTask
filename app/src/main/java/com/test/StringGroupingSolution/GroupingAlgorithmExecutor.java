@@ -38,7 +38,7 @@ public class GroupingAlgorithmExecutor
 
             for (int i = 0; i < sections. length; i++)
             {
-                if (sections [i]. length () == 2)
+                if (sections [i]. isEmpty () || sections [i]. length () == 2)
                     continue;
                 
                 StringPositionElement element =
