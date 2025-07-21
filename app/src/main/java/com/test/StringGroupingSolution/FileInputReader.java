@@ -39,8 +39,11 @@ public class FileInputReader
 
             for (String section : sections)
             {
-                if (section. length () < 2)
+                if (section. isEmpty ())
                     continue;
+
+                if (section. length () < 2)
+                    continue StringIteration;
 
                 if (!section. startsWith ("\"") || !section. endsWith ("\""))
                     continue StringIteration;
