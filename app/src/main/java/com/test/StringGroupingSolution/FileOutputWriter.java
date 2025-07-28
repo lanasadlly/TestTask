@@ -33,7 +33,7 @@ public class FileOutputWriter
             for (int i = 0; i < groups. size (); i++)
                 writeGroup (i);
 
-            fout. flush ();
+            fout. close ();
         }
         catch (IOException e)
         {
