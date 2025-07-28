@@ -52,6 +52,7 @@ public class FileInputReader
             stringList. add (str);
         }
 
+        fin. close ();
         return stringList;
     }
 }
